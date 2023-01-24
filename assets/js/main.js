@@ -41,6 +41,8 @@ let to = "to";
 //let school    is oben
 let neueTextKlein = "";
 
+
+// 2. 
 function klein() {
     if (neueText === "Sam is going to school") {
 
@@ -56,4 +58,59 @@ function klein() {
 }
 
 klein();
+console.log(neueTextKlein);
+
+
+// 1. 
+let neueTextGroß = "";
+
+function groß() {
+    if (neueTextKlein != neueText) {
+        console.log(neueTextKlein + " " + neueText);
+
+        neueTextGroß = neueTextKlein.toUpperCase();
+        console.log(neueTextGroß);
+        document.write(neueTextGroß + " " + "</br>");
+
+    }
+}
+
+groß();
+
+// 3.
+function samGroßMachen(x, y) {          // x = ist zustand    y = soll zustand
+    let sam = x;
+    let samSoll = y;
+
+    if (sam === samSoll) {
+        let samIndex = neueText.indexOf(sam);
+        console.log(samIndex);          // 0
+
+        let samLänge = sam.length;
+        console.log(samLänge);          // 3
+
+        let samGroß = sam.toUpperCase();
+        console.log(samGroß);          // SAM 
+
+        let samErsetzenMitSAM = neueText.replace(sam, samGroß);
+        console.log(samErsetzenMitSAM);
+    }
+}
+
+function zuPunkt3() {
+samGroßMachen(sam,"Sam");
+samGroßMachen(school,"school");
+}
+
+zuPunkt3();
+
+let textZuPunkt3 = neueText.replace(sam, "SAM").replace(school, "SCHOOL");
+console.log(textZuPunkt3);
+document.write(textZuPunkt3 + " " + "</br>");
+
+
+// 4.
+let textZuPunkt4 = neueText.replace(is, "IS").replace(going, "GOING").replace(to, "TO");
+console.log(textZuPunkt4);
+document.write(textZuPunkt4 + " " + "</br>");
 
