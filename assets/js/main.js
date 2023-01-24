@@ -114,3 +114,12 @@ let textZuPunkt4 = neueText.replace(is, "IS").replace(going, "GOING").replace(to
 console.log(textZuPunkt4);
 document.write(textZuPunkt4 + " " + "</br>");
 
+
+// 5. 
+function zuPunkt5(){
+    if (sam === "Sam" && is === "is" && going === "going" && to === "to" && school === "school" ){
+        document.write("Sam Is Going To School " + "</br>");
+    }
+}
+
+zuPunkt5();
