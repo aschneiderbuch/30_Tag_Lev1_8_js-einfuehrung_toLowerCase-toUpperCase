@@ -26,3 +26,12 @@ in html
 
 const text = "Sam is going to codingschool";
 console.log(text);
+
+let school = "school";
+
+let neueText = text.replace("codingschool", school);
+console.log(neueText);
+
+
+// ab jetzt mit       neueText      weiter
+
