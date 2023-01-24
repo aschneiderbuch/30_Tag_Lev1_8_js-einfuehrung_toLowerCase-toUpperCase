@@ -34,4 +34,26 @@ console.log(neueText);
 
 
 // ab jetzt mit       neueText      weiter
+let sam = "Sam";
+let is = "is";
+let going = "going";
+let to = "to";
+//let school    is oben
+let neueTextKlein = "";
+
+function klein() {
+    if (neueText === "Sam is going to school") {
+
+        neueTextKlein = neueText.toLowerCase();
+        console.log(neueTextKlein);
+        document.write(neueTextKlein + " " + "</br>");
+    }
+
+    else {
+        console.log("Fehler!!!");
+        document.write("Fehler!!! " + "</br>");
+    }
+}
+
+klein();
 
